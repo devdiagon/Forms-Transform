@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Figura.cs" />
     <Compile Include="figure_classes\Rombo.cs" />
     <Compile Include="figure_views\FrmRombo.cs">
       <SubType>Form</SubType>
