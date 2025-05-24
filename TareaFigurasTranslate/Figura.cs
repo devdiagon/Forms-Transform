@@ -51,5 +51,50 @@ namespace TareaFigurasTranslate
                 new PointF(0,midMayor)
             });
         }
+
+        public static Figura CrearRomboide(float baseLength, float height)
+        {
+            float midBase = baseLength / 2;
+            float midAltura = height / 2;
+            float offset = 2;
+
+            return new Figura(new PointF[]
+            {
+                new PointF(-midBase + offset, -midAltura),
+                new PointF(midBase + offset, -midAltura),
+                new PointF(midBase - offset, midAltura),
+                new PointF(-midBase - offset, midAltura)
+            });
+        }
+
+        public static Figura CrearTrapecioIsoceles(float baseMayor, float baseMenor, float altura)
+        {
+            float midBaseMayor = baseMayor / 2;
+            float midBaseMenor = baseMenor / 2;
+            float midAltura = altura / 2;
+
+            return new Figura(new PointF[]
+            {
+                new PointF(-midBaseMayor, midAltura),
+                new PointF(-midBaseMenor, -midAltura),
+                new PointF(midBaseMenor, -midAltura),
+                new PointF(midBaseMayor, midAltura)
+            });
+        }
+
+        public static Figura CrearPentagono(float radio, int numLados)
+        {
+            PointF[] vertices = new PointF[numLados];
+
+            for (int i = 0; i < numLados; i++)
+            {
+                float angulo = (float)(-Math.PI / 2 + i * 2 * Math.PI / numLados); // empieza apuntando hacia arriba
+                float x = radio * (float)Math.Cos(angulo);
+                float y = radio * (float)Math.Sin(angulo);
+                vertices[i] = new PointF(x, y);
+            }
+
+            return new Figura(vertices);
+        }
     }
 }

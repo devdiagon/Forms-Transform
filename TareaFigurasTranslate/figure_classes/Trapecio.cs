@@ -99,7 +99,7 @@ namespace TareaFigurasTranslate.figure_classes
 
         private void DefineFigure()
         {
-            //figure = Figura.CrearRomboide(baseMayor, baseMenor);
+            figure = Figura.CrearTrapecioIsoceles(baseMayor, baseMenor, altura);
         }
 
         public void DrawFigure(PictureBox picCanvas)

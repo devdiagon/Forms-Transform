@@ -90,7 +90,7 @@ namespace TareaFigurasTranslate.figure_classes
 
         private void DefineFigure()
         {
-            //figure = Figura.CrearRomboide(ladoBase, ladoOblicuo);
+            figure = Figura.CrearRomboide(ladoBase, altura);
         }
 
         public void DrawFigure(PictureBox picCanvas)

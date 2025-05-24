@@ -13,7 +13,7 @@ namespace TareaFigurasTranslate.figure_views
 {
     public partial class FrmTrapecio : Form
     {
-        private Romboide ObjRomboide = new Romboide();
+        private Trapecio ObjTrapecio = new Trapecio();
         private static FrmTrapecio instance;
 
         public static FrmTrapecio GetInstance()
@@ -27,24 +27,24 @@ namespace TareaFigurasTranslate.figure_views
         public FrmTrapecio()
         {
             InitializeComponent();
-            ObjRomboide.InitializeData(txtInputA, txtInputB, txtInputSide, txtPerimeter, txtArea, trbScale, picCanvas);
+            ObjTrapecio.InitializeData(txtInputA, txtInputB, txtInputSide, txtPerimeter, txtArea, trbScale, picCanvas);
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
-            ObjRomboide.ReadData(txtInputA, txtInputB, txtInputSide);
-            ObjRomboide.ShowData(txtPerimeter, txtArea);
-            ObjRomboide.DrawFigure(picCanvas);
+            ObjTrapecio.ReadData(txtInputA, txtInputB, txtInputSide);
+            ObjTrapecio.ShowData(txtPerimeter, txtArea);
+            ObjTrapecio.DrawFigure(picCanvas);
         }
         private void btnReset_Click(object sender, EventArgs e)
         {
-            ObjRomboide.InitializeData(txtInputA, txtInputB, txtInputSide, txtPerimeter, txtArea, trbScale, picCanvas);
+            ObjTrapecio.InitializeData(txtInputA, txtInputB, txtInputSide, txtPerimeter, txtArea, trbScale, picCanvas);
 
             lblScaleValue.Text = "0.00";
         }
         private void btnClose_Click(object sender, EventArgs e)
         {
-            ObjRomboide.CloseForm(this);
+            ObjTrapecio.CloseForm(this);
         }
         private void scaleScroll(object sender, EventArgs e)
         {
@@ -56,17 +56,17 @@ namespace TareaFigurasTranslate.figure_views
             }
 
             lblScaleValue.Text = $"{escala:0.00}";
-            ObjRomboide.ScaleFigure(picCanvas, escala);
+            ObjTrapecio.ScaleFigure(picCanvas, escala);
         }
 
         private void btnRotateLeft_Click(object sender, EventArgs e)
         {
-            ObjRomboide.RotateLeft(picCanvas);
+            ObjTrapecio.RotateLeft(picCanvas);
         }
 
         private void btnRotateRight_Click(object sender, EventArgs e)
         {
-            ObjRomboide.RotateRight(picCanvas);
+            ObjTrapecio.RotateRight(picCanvas);
         }
 
         private void pic_keyDown(object sender, PreviewKeyDownEventArgs e)
@@ -83,19 +83,19 @@ namespace TareaFigurasTranslate.figure_views
             switch (e.KeyCode)
             {
                 case Keys.Up:
-                    ObjRomboide.Desplazar(0, -desplazamiento);
+                    ObjTrapecio.Desplazar(0, -desplazamiento);
                     break;
                 case Keys.Down:
-                    ObjRomboide.Desplazar(0, desplazamiento);
+                    ObjTrapecio.Desplazar(0, desplazamiento);
                     break;
                 case Keys.Left:
-                    ObjRomboide.Desplazar(-desplazamiento, 0);
+                    ObjTrapecio.Desplazar(-desplazamiento, 0);
                     break;
                 case Keys.Right:
-                    ObjRomboide.Desplazar(desplazamiento, 0);
+                    ObjTrapecio.Desplazar(desplazamiento, 0);
                     break;
             }
-            ObjRomboide.DrawFigure(picCanvas);
+            ObjTrapecio.DrawFigure(picCanvas);
         }
 
         private void picCanvas_Click(object sender, EventArgs e)

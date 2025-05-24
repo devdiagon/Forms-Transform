@@ -13,7 +13,7 @@ namespace TareaFigurasTranslate.figure_classes
         //Variables de la figura
         private float lado;
         private float apotema;
-        private float numLados = 5;
+        private int numLados = 5;
         private float perimetro;
         private float area;
 
@@ -95,7 +95,8 @@ namespace TareaFigurasTranslate.figure_classes
 
         private void DefineFigure()
         {
-            //figure = Figura.CrearPentagono(diagMayor, diagMenor);
+            float radio = (float) (lado / (2 * Math.Sin(Math.PI / 5)));
+            figure = Figura.CrearPentagono(radio, numLados);
         }
 
         public void DrawFigure(PictureBox picCanvas)
