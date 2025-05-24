@@ -331,7 +331,7 @@
             this.Controls.Add(this.picCanvas);
             this.Controls.Add(this.grbInputs);
             this.Name = "FrmRomboide";
-            this.Text = "FrmRombo";
+            this.Text = "FrmRomboide";
             this.grbInputs.ResumeLayout(false);
             this.grbInputs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();

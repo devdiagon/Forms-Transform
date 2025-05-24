@@ -287,7 +287,7 @@
             this.Controls.Add(this.picCanvas);
             this.Controls.Add(this.grbInputs);
             this.Name = "FrmPentagono";
-            this.Text = "FrmRombo";
+            this.Text = "FrmPentagono";
             this.grbInputs.ResumeLayout(false);
             this.grbInputs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();

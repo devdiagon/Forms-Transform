@@ -331,7 +331,7 @@
             this.Controls.Add(this.picCanvas);
             this.Controls.Add(this.grbInputs);
             this.Name = "FrmTrapecio";
-            this.Text = "FrmRombo";
+            this.Text = "FrmTrapecio";
             this.grbInputs.ResumeLayout(false);
             this.grbInputs.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();

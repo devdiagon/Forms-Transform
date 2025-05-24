@@ -95,7 +95,7 @@ namespace TareaFigurasTranslate.figure_classes
 
         private void DefineFigure()
         {
-            float radio = (float) (lado / (2 * Math.Sin(Math.PI / 5)));
+            float radio = (float) (lado / (2 * Math.Sin(Math.PI / numLados)));
             figure = Figura.CrearPentagono(radio, numLados);
         }
 
