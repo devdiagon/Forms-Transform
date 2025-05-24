@@ -36,5 +36,23 @@ namespace TareaFigurasTranslate
             FrmRombo frmRombo = FrmRombo.GetInstance();
             placeForm(frmRombo);
         }
+
+        private void romboideToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmRomboide frmRomboide = FrmRomboide.GetInstance();
+            placeForm(frmRomboide);
+        }
+
+        private void pentágonoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPentagono frmPentagono = FrmPentagono.GetInstance();
+            placeForm(frmPentagono);
+        }
+
+        private void trapecioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTrapecio frmTrapecio = FrmTrapecio.GetInstance();
+            placeForm(frmTrapecio);
+        }
     }
 }

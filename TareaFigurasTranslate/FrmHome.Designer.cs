@@ -64,18 +64,21 @@
             this.pentágonoToolStripMenuItem.Name = "pentágonoToolStripMenuItem";
             this.pentágonoToolStripMenuItem.Size = new System.Drawing.Size(164, 38);
             this.pentágonoToolStripMenuItem.Text = "Pentágono";
+            this.pentágonoToolStripMenuItem.Click += new System.EventHandler(this.pentágonoToolStripMenuItem_Click);
             // 
             // romboideToolStripMenuItem
             // 
             this.romboideToolStripMenuItem.Name = "romboideToolStripMenuItem";
             this.romboideToolStripMenuItem.Size = new System.Drawing.Size(157, 38);
             this.romboideToolStripMenuItem.Text = "Romboide";
+            this.romboideToolStripMenuItem.Click += new System.EventHandler(this.romboideToolStripMenuItem_Click);
             // 
             // trapecioToolStripMenuItem
             // 
             this.trapecioToolStripMenuItem.Name = "trapecioToolStripMenuItem";
             this.trapecioToolStripMenuItem.Size = new System.Drawing.Size(137, 38);
             this.trapecioToolStripMenuItem.Text = "Trapecio";
+            this.trapecioToolStripMenuItem.Click += new System.EventHandler(this.trapecioToolStripMenuItem_Click);
             // 
             // pnlWrapper
             // 

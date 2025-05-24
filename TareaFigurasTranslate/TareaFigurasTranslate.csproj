@@ -47,12 +47,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Figura.cs" />
+    <Compile Include="figure_classes\Pentagono.cs" />
     <Compile Include="figure_classes\Rombo.cs" />
+    <Compile Include="figure_classes\Romboide.cs" />
+    <Compile Include="figure_classes\Trapecio.cs" />
+    <Compile Include="figure_views\FrmPentagono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="figure_views\FrmPentagono.Designer.cs">
+      <DependentUpon>FrmPentagono.cs</DependentUpon>
+    </Compile>
     <Compile Include="figure_views\FrmRombo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="figure_views\FrmRombo.Designer.cs">
       <DependentUpon>FrmRombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="figure_views\FrmRomboide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="figure_views\FrmRomboide.Designer.cs">
+      <DependentUpon>FrmRomboide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="figure_views\FrmTrapecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="figure_views\FrmTrapecio.Designer.cs">
+      <DependentUpon>FrmTrapecio.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmHome.cs">
       <SubType>Form</SubType>
@@ -62,8 +83,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="figure_views\FrmPentagono.resx">
+      <DependentUpon>FrmPentagono.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="figure_views\FrmRombo.resx">
       <DependentUpon>FrmRombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="figure_views\FrmRomboide.resx">
+      <DependentUpon>FrmRomboide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="figure_views\FrmTrapecio.resx">
+      <DependentUpon>FrmTrapecio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
